@@ -1,0 +1,23 @@
+.label {
+  display: block;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.profileInput {
+  width: 100%;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  transition: 0.3s;
+  outline: none;
+  word-break: break-all;
+}
+
+.profileInput:focus,
+.profileInput:active,
+.profileInput.active {
+  background-color: rgba(201, 130, 255, 0.265);
+  border-color: rgb(105, 0, 186);
+}

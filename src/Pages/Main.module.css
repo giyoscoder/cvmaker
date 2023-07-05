@@ -1,0 +1,17 @@
+.borderBottom {
+    border-bottom: 1px solid grey;
+    /* background-color: red; */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.showDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showDiv button {
+    padding: 10px 15px;
+    cursor: pointer;
+}

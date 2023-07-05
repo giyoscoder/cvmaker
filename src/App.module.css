@@ -1,0 +1,10 @@
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-block: 50px;
+}
+
+.resume {
+    padding: 50px;
+}
