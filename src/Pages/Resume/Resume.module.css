@@ -119,3 +119,9 @@ p.name + p {
     text-decoration: none;
     color: inherit;
 }
+
+@media(max-width: 1024px) {
+    .resume {
+        overflow-x: scroll;
+    }
+}

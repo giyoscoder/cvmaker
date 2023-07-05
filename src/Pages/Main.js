@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import Profile from '../Components/Profile';
-import Education from '../Components/Education';
-import Skills from '../Components/Skills';
-import PowerfullPoints from '../Components/PowerfullPoints';
+import React, { useState } from "react";
 
-import classes from './Main.module.css';
-import Projects from '../Components/Projects';
+import Profile from "../Components/Profile";
+import Education from "../Components/Education";
+import Skills from "../Components/Skills";
+import PowerfullPoints from "../Components/PowerfullPoints";
+import Projects from "../Components/Projects";
+
+import classes from "./Main.module.css";
+
 
 
 const Main = () => {
@@ -16,47 +18,58 @@ const Main = () => {
   const [pojects, setProjects] = useState(false);
 
   return (
-    <div >
+    <>
       <div className={classes.borderBottom}>
-       <div className={classes.showDiv}>
-       <p style={{color: profile ? '#000' : 'grey'}}>Personal Details</p>
-        <button  onClick={() => setProfile(!profile)}>{profile ? '-' : '+'}</button>
-       </div>
-        {profile && <Profile/>}
+        <div className={classes.showDiv}>
+          <p style={{ color: profile ? "#000" : "grey" }}>Personal Details</p>
+          <button onClick={() => setProfile(!profile)}>
+            {profile ? "-" : "+"}
+          </button>
+        </div>
+        {profile && <Profile />}
       </div>
       <div className={classes.borderBottom}>
-       <div className={classes.showDiv}>
-       <p style={{color: education ? '#000' : 'grey'}}>Education</p>
-        <button  onClick={() => setEducation(!education)}>{education ? '-' : '+'}</button>
-       </div>
-        {education &&  <Education/>}
+        <div className={classes.showDiv}>
+          <p style={{ color: education ? "#000" : "grey" }}>Education</p>
+          <button onClick={() => setEducation(!education)}>
+            {education ? "-" : "+"}
+          </button>
+        </div>
+        {education && <Education />}
       </div>
       <div className={classes.borderBottom}>
-       <div className={classes.showDiv}>
-       <p style={{color: skills ? '#000' : 'grey'}}>Skills</p>
-        <button  onClick={() => setSkills(!skills)}>{skills ? '-' : '+'}</button>
-       </div>
-        {skills && <Skills/>}
-      </div>
-
-      <div className={classes.borderBottom}>
-       <div className={classes.showDiv}>
-       <p style={{color: powerfullPoints ? '#000' : 'grey'}}>Powerfull Points</p>
-        <button  onClick={() => setPowerfullPoints(!powerfullPoints)}>{powerfullPoints ? '-' : '+'}</button>
-       </div>
-        {powerfullPoints &&  <PowerfullPoints/>}
+        <div className={classes.showDiv}>
+          <p style={{ color: skills ? "#000" : "grey" }}>Skills</p>
+          <button onClick={() => setSkills(!skills)}>
+            {skills ? "-" : "+"}
+          </button>
+        </div>
+        {skills && <Skills />}
       </div>
 
       <div className={classes.borderBottom}>
-       <div className={classes.showDiv}>
-       <p style={{color: pojects ? '#000' : 'grey'}}>Projects</p>
-        <button  onClick={() => setProjects(!pojects)}>{pojects ? '-' : '+'}</button>
-       </div>
-        {pojects &&  <Projects/>}
+        <div className={classes.showDiv}>
+          <p style={{ color: powerfullPoints ? "#000" : "grey" }}>
+            Powerfull Points
+          </p>
+          <button onClick={() => setPowerfullPoints(!powerfullPoints)}>
+            {powerfullPoints ? "-" : "+"}
+          </button>
+        </div>
+        {powerfullPoints && <PowerfullPoints />}
       </div>
-       
-    </div>
-  )
-}
 
-export default Main
+      <div className={classes.borderBottom}>
+        <div className={classes.showDiv}>
+          <p style={{ color: pojects ? "#000" : "grey" }}>Projects</p>
+          <button onClick={() => setProjects(!pojects)}>
+            {pojects ? "-" : "+"}
+          </button>
+        </div>
+        {pojects && <Projects />}
+      </div>
+    </>
+  );
+};
+
+export default Main;

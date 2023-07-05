@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { UserContext } from "../../Store/user-context";
+
+
 import classes from "./Resume.module.css";
+
 
 const Resume = () => {
   const { userInfo } = useContext(UserContext);
@@ -16,6 +19,9 @@ const Resume = () => {
 
 
   return (
+
+  
+   
     <div className={classes.resume}>
       <div className={classes.left}>
         <div className={classes.img}>
@@ -102,6 +108,7 @@ const Resume = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 

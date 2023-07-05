@@ -8,9 +8,9 @@ function App() {
   return (
     <Layout>
       <div className={classes.app}>
-        <Main />
+        <div className={classes.main}><Main /></div>
         <div className={classes.resume}>
-        <Resume />
+        <Resume />  
         </div>
       </div>
     </Layout>
