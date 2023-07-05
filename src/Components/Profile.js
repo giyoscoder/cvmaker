@@ -13,7 +13,7 @@ const Profile = () => {
         <label for="images" className={classes["drop-container"]}>
           <span className={classes["drop-title"]}>Drop files here</span>
 
-          <input type="file" id="images" accept="image/*" required  onChange={e => setUserInfo({...userInfo, img: e.target.value})} />
+          <input type="file" id="images" accept="image/*" required  onChange={e => setUserInfo({...userInfo, img: URL.createObjectURL(e.target.files[0])})} />
         </label>
       </div>
       <div className={classes.name}>

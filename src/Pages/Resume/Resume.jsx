@@ -57,7 +57,7 @@ const Resume = () => {
         </div>
 
         <div className={classes.leftSec}>
-          {/* {userInfo.skills <h3>Skills</h3>} */}
+          <h3>Skills</h3>
           <div className={classes.line}></div>
           <ul className={classes.skills}>
             {userInfo.skills?.split(",").map((data, idx) => {
@@ -94,7 +94,7 @@ const Resume = () => {
             {project?.split(",").map((data, idx) => {
               return (
                 <li key={idx}>
-                  <a href={data}>{data}</a>
+                  <a href={data} target='_blank'>{data}</a>
                 </li>
               );
             })}
